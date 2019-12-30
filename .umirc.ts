@@ -39,15 +39,11 @@ const config: IConfig =  {
   ],
   proxy: {
     '/api': {
-      target: 'http://localhost:8001',
+      target: 'http://localhost:3032',
       changeOrigin: true,
     },
-    '/api/mastercards': {
-      target: 'http://localhost:8000',
-      changeOrigin: true,
-    },
-    '/wechat': {
-      target: 'http://localhost:8000',
+    '/app1': {
+      target: 'http://localhost:3031',
       changeOrigin: true,
     },
   },
